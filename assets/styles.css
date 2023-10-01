@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik+Mono+One");
+:root {
+    --body-font: 'Rukik Mono One', sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #FFAAD3 0%, #F46E92 47.17%, #EE2E2E 100%);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  /*==================== Landing Page ====================*/
+  
+  h1{
+    color:#FFF;
+    font-size: 90.33px;
+    font-style: normal;
+    font-family: var(--body-font);
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 2.893px;
+    word-wrap: break-word;
+    text-align: center;
+    margin-top: relative;
+    margin-bottom: 15px;
+    text-shadow: -6px 1px 1px #E95367,
+    -6px 2px 1px #E95367,
+    -6px 3px 1px #E95367,
+    -6px 4px 1px #E95367,
+    -6px 5px 1px #E95367,
+    -6px 6px 1px #E95367,
+    -6px 7px 1px #E95367,
+    -6px 18px 6px rgba(16,16,16,0.4),
+    -6px 22px 10px rgba(16,16,16,0.2),
+    -6px 25px 35px rgba(16,16,16,0.2),
+    -6px 30px 60px rgba(16,16,16,0.4);
+  }
+.tagline{
+    font-size: 26.33px;
+    font-style: normal;
+    font-family: var(--body-font);
+    font-weight: 750;
+    color:#FFF;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top:0;
+    position:relative;
+    text-shadow: -6px 5px 6px rgba(16,16,16,0.4),
+    -6px 6px 10px rgba(16,16,16,0.2),
+    -6px 7px 35px rgba(16,16,16,0.2),
+    -6px 6px 60px rgba(16,16,16,0.4);
+
+}
+ .split-words{
+    white-space: pre-line;
+ }
+ 
+ .home-button{
+    position:absolute;
+    top:20px;
+    left:20px;
+}
+.settings-button{
+    position:absolute;
+    top: 20px;
+    left: 100px;
+}
+.profile-button{
+    position:absolute;
+    top: 20px;
+    right: 20px;
+}
+.info-button{
+    position:absolute;
+    top: 20px;
+    right: 100px;
+
+}
+ .round_button{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 1.25px solid #FFF;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(255, 255, 255, 0.00) 100%), #FFC42D;
+    background-blend-mode: soft-light, normal; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.round_button:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.nav__icon{
+    font-size: 2rem;
+    color: #FFF;
+}
+
+.long__button {
+    position:relative;
+    left: 520px;
+    top:auto;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 21px;
+    font-family: var(--body-font);
+    &.long__button {
+      font-weight: 900;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 0.5em 3em;
+      background: #ffcc4d;
+      border: 2px solid #fff;
+      border-radius: 3rem;
+      transform-style: preserve-3d;
+      transition: transform 150ms cubic-bezier(0, 0, 0.50, 1);
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #ffbe1a;
+        border-radius: inherit;
+        box-shadow: 0 0 0 2px #fff;
+        transform: translate3d(0, 0.75em, -1em);
+        transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+          box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+      }
+      &:hover {
+        background: #ffc42d;
+        transform: translate(0, 0.25em);
+        &::before {
+          box-shadow: 0 0 0 2px #fff;
+          transform: translate3d(0, 0.5em, -1em);
+        }
+      }
+      &:active {
+        background: #ffc42d;
+        transform: translate(0em, 0.75em);
+        &::before {
+          box-shadow: 0 0 0 2px #fff, 0 0 #fff;
+          transform: translate3d(0, 0, -1em);
+        }
+      }
+    }
+  }
+  .Starting_Character{
+    text-align: center; /* Center the image horizontally */
+    margin-top: 2px;
+  }
+  .blood_home{
+    max-width: 190px;
+    margin-bottom:0.5rem;
+    margin-top:0.5rem;
+  }
