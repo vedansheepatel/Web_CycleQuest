@@ -13,6 +13,13 @@ body {
 
   /*==================== Landing Page ====================*/
   /*=====Title and Slogan=====*/
+  .game{
+    margin-top:relative;
+  }
+  .title{
+    margin-top:auto;
+    padding-bottom: 1rem;
+  }
   h1{
     color:#FFF;
     font-size: 90.33px;
@@ -23,7 +30,7 @@ body {
     letter-spacing: 2.893px;
     word-wrap: break-word;
     text-align: center;
-    margin-top: relative;
+    
     margin-bottom: 15px;
     text-shadow: -6px 1px 1px #E95367,
     -6px 2px 1px #E95367,
@@ -110,6 +117,7 @@ body {
     display: flex;
     align-items: center;
     top:auto;
+    padding-top: 0.5rem;
 }
 .long__button {
     cursor: pointer;
@@ -171,6 +179,7 @@ body {
   }
 
   /*====Information Modal======*/
+
 .info{
     font-family: var(--body-font);
     color:#FFF;
@@ -346,4 +355,43 @@ h3{
   position:absolute;
   -webkit-animation: mover 2s infinite  alternate;
   animation: mover 1s infinite  alternate;
+}
+
+.caption{
+  font-size: 28.33px;
+  font-style: normal;
+  font-family: var(--body-font);
+  font-weight: 800;
+  color:#FFF;
+  text-align: center;
+  margin-bottom: 0rem;
+  margin-top:3rem;
+  position:relative;
+  text-shadow: -6px 5px 6px rgba(16,16,16,0.4),
+  -6px 6px 10px rgba(16,16,16,0.2),
+  -6px 7px 35px rgba(16,16,16,0.2),
+  -6px 6px 60px rgba(16,16,16,0.4);
+
+}
+.phase_description{
+  font-family: var(--body-font);
+  color:#FFF;
+  font-size: 30px;
+  font-weight: 900;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  width: relative;
+  height: relative;
+  border-radius: 23.133px;
+  border: 4.338px solid #FFF;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(255, 255, 255, 0.45) 100%), #FFC125;
+  background-blend-mode: soft-light, normal;
+  text-align: center;
+  justify-content: center;
+  position:center;
+  z-index:1;
+  top:50px;
+  left:400px;;
 }
