@@ -14,13 +14,13 @@
     </head>
     <body>
         <!--==================== Langing Page ====================-->
-        <div class="StartingPage">
+        <div class="StartingPage" id="StartPage">
               <h1 class="split.words">CYCLE<br>QUEST</h1>
               <p class="tagline">Your Journey Begins Here</p>
               <div class="Starting_Character">
                 <img src="assets/Img/Character/Blooddrop.png" alt="Blood Drop" class="blood_home">
               </div>
-              <div class="start_button">
+              <div class="start_button" id="Play">
                 <button class="long__button">PLAY
                     </button>
             </div>
@@ -32,26 +32,66 @@
                     <button class="round_button">
                         <i class="uil uil-setting nav__icon"></i></button>
                 </div>
-                <div class="button profile-button">
+                <div class="profile-button">
                     <button class="round_button">
                         <i class="uil uil-user nav__icon"></i></button>
                 </div>
-                <div id="info_button" class="buttoninfo">
+                <div id="info-button-modal" class="buttoninfo">
                     <button class="round_button">
                         <i class="uil uil-info nav__icon"></i></button>
                 </div>
                 <div id="info_modal" class="info">
                     <span class="close">&times;</span>
                     <h2>Embark On A Quest!</h2>
-                    <div class="small_modal">
                     <div class="modal_content">
                     <p class="game_description">Explore menstrual cycle phases, demystify common symptoms, separate myths from facts, and more—all while enjoying interactive games!</p>
                 </div>
                 </div>
+        </div>
+        <!--===================First Stage Map Page======================-->
+        <div class="Game_Map" id="Page1">
+            <div class="Logo">
+                <h3 class="split.words">CYCLE<br>QUEST</h3>
             </div>
-  
-   
-    </div>
+            <div class="level1_Map">
+                <img src="assets/Img/Map/Phase1Unlocked.png" class="land1" id="level1">
+                <img src="assets/Img/Map/Phase2Locked.png" class="land2">
+                <img src="assets/Img/Map/Phase3Locked.png" class="land3">
+                <img src="assets/Img/Map/Phase4Locked.png" class="land4">
+                <div class="home_button" id="go_home">
+                    <button class="round_button">
+                        <i class="uil uil-home nav__icon"></i> </button>
+                  </div>
+                    <div class="settings_button">
+                        <button class="round_button">
+                            <i class="uil uil-setting nav__icon"></i></button>
+                    </div>
+                    <div id="info_map_button" class="mapinfo_button">
+                        <button class="round_button">
+                            <i class="uil uil-info nav__icon"></i></button>
+                    </div>
+                    <div class="Land1Blooddrop">
+                        <img src="assets/Img/Character/Blooddrop.png" alt="Blood Drop" class="blood_land1">
+                      </div>
+            </div>
+            <div id="map_modal" class="info">
+                <span class="close">&times;</span>
+                <h2>Quest Map</h2>
+                <div class="modal_content">
+                <p class="game_description">As you complete each mentrsual phase game, you will earn a badge and the next phase will be unlocked.<br>May the flow be ever in your favour! <br>(Click on phase 1 to start) </p>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!--===================Phase 1 Intro======================-->
+        <div class="BloodyMess" id="Phase1">
+            <div id="phase1back" class="back_button">
+                <button class="round_button">
+                    <i class="uil uil-arrow-left nav__icon"></i> </button>
+              </div>
+              <p class="tagline">PHASE 1: MENSTRUAL PHASE</p>
+              <h1 class="split.words">BLOODY<br>MESS</h1>
+        </div>
     <script src="assets/js/main.js"></script>
        
     </body>
