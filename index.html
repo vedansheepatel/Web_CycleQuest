@@ -84,16 +84,20 @@
         </div>
         </div>
         <!--===================Phase 1 Intro======================-->
-        <div class="BloodyMess" id="Phase1">
+        <div class="Phase_1" id="Phase1">
             <div id="phase1back" class="back_button">
                 <button class="round_button">
                     <i class="uil uil-arrow-left nav__icon"></i> </button>
               </div>
+              <!-- <div id="bloodymess_game" class="game_info">
+                <button class="round_button">
+                    <i class="uil uil-question nav__icon"></i> </button>
+              </div> -->
               <p class="caption">PHASE 1: MENSTRUAL PHASE</p>
               <h1 class="split.words title">BLOODY<br>MESS</h1>
               <div class="phase_description">
-                <div class="modal_content">
-                    <p class="game_description">Often referred to as the period and signifies the start of the menstrual cycle. It is when the body sheds the lining of the uterus through the vagina. This natural process usually lasts for about 3-7 days and can have symptoms like cramping, bloating, acne, and irritability. </p>
+                <div class="phase_content">
+                    <p class="game_description">Often referred to as the period and signifies the start of the menstrual cycle. It is when the body sheds the lining of the uterus through the vagina. This natural process usually lasts for about 3-7 days and can have symptoms like cramping, bloating, acne, and irritability.<br><br><b>Get ready to combat these symptoms!</b></p>
                 </div>
               </div>
               <div class="start_button" id="Continue">
@@ -101,7 +105,39 @@
                 </button>
               </div>
         </div>
+        <!--========Bloody Mess -->
+        <div class="BloodyMess" id="game_1">
+            <div id="game_1_modal" class="info">
+                <span class="close">&times;</span>
+                <h2>How To Play</h2>
+                <div class="modal_content">
+                <p class="game_description">Use left and right arrow keys to avoid the yellow symptoms and collect the white relief packs!</p>
+            </div>
+            </div> 
+            <div id="player_1" class="game_1_player">
+                <img src="assets/Img/Character/Blooddrop.png" alt="Blood Drop" class="game_1_player">
+            </div>
+            <div id="symptoms" class="obstacle">
+                <img src="assets/Img/Bloodymess/Obstacles/Acne.png" alt="Acne" class="obstacle">
+                <img src="assets/Img/Bloodymess/Obstacles/Backache.png" alt="Backache" class="obstacle">
+                <img src="assets/Img/Bloodymess/Obstacles/Bloating.png" alt="Bloating" class="obstacle">
+                <img src="assets/Img/Bloodymess/Obstacles/Breast Soreness.png" alt="Sore" class="obstacle">
+                <img src="assets/Img/Bloodymess/Obstacles/Cramps.png" alt="Cramps" class="obstacle">
+                <img src="assets/Img/Bloodymess/Obstacles/Cravings.png" alt="Craving" class="obstacle">
+                <img src="assets/Img/Bloodymess/Obstacles/Diarrhea.png" alt="Poo" class="obstacle">
+                <img src="assets/Img/Bloodymess/Obstacles/Fatigue.png" alt="Fatigue" class="obstacle">
+                <img src="assets/Img/Bloodymess/Obstacles/Mood Swings.png" alt="Moody" class="obstacle">
+            </div>
+            <div id="relief" class="gains">
+                <img src="assets/Img/Bloodymess/Gains/Heat Pack.png" alt="Pack" class="relief">
+                <img src="assets/Img/Bloodymess/Gains/Herbal Tea.png" alt="Tea" class="relief">
+                <img src="assets/Img/Bloodymess/Gains/Painkiller.png" alt="Painkiller" class="relief">
+                <img src="assets/Img/Bloodymess/Gains/Supplements.png" alt="Vitamin" class="relief">
+            </div>
+        </div>
+
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/game1.js"></script>
        
     </body>
     </html>

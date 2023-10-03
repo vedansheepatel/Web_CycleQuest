@@ -124,7 +124,9 @@ body {
     font-size: 21px;
     font-family: var(--body-font);
     &.long__button {
+      position: fixed;
       font-weight: 900;
+      bottom:20px;
       color: #fff;
       text-transform: uppercase;
       padding: 0.5em 3em;
@@ -141,7 +143,7 @@ body {
         top: 0;
         left: 0;
         right: 0;
-        bottom: 0;
+        bottom: 0px;
         background: #ffbe1a;
         border-radius: inherit;
         box-shadow: 0 0 0 2px #fff;
@@ -174,6 +176,8 @@ body {
   }
   .blood_home{
     max-width: 190px;
+    width:auto;
+    height:auto;
     margin-bottom:0.5rem;
     margin-top:0.5rem;
   }
@@ -357,6 +361,7 @@ h3{
   animation: mover 1s infinite  alternate;
 }
 
+/*======Phase Intro Screen========*/
 .caption{
   font-size: 28.33px;
   font-style: normal;
@@ -382,16 +387,50 @@ h3{
   padding-right:20px;
   padding-top:1rem;
   padding-bottom:1rem;
-  width: relative;
-  height: relative;
+  bottom:auto;
   border-radius: 23.133px;
   border: 4.338px solid #FFF;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(255, 255, 255, 0.45) 100%), #FFC125;
   background-blend-mode: soft-light, normal;
   text-align: center;
   justify-content: center;
-  position:center;
+  position:fixed;
   z-index:1;
-  top:50px;
-  left:400px;;
+  top:auto;
+  left:auto;;
+}
+.phase_content {
+  font-size: 20.33px;
+  font-style: normal;
+  font-family: var(--body-font);
+  font-weight: 500;
+  color:#000;
+  font-family: var(--body-font);
+  background: radial-gradient(#fffbf3, #ffe19e);
+  padding-top:0.1rem;
+  padding-bottom:0.05rem;
+  box-sizing: border-box;
+  border-radius: 20px 18px 20px 18px;
+  text-align: center;
+  text-shadow: 0 0 0;
+  position:relative;
+  -webkit-animation-name: animatetop;
+-webkit-animation-duration: 0.3s;
+animation-name: animatetop;
+animation-duration: 0.3s
+}
+/*========Game 1 - Bloody Mess===========*/
+.obstacle{
+  width:100px;
+  height:100px;
+}
+.relief{
+  width:100px;
+  height:100px;
+}
+.game_1_player{
+  width: 135px;
+  position:absolute;
+  bottom:0px;
+  transition:0.2s;
 }

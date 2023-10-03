@@ -1,9 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
 //Have first Page loaded and everything else not loaded
+//map not loaded
 var map1 = document.getElementById('Page1');
 map1.style.display='none';
+//phase 1 intro not loaded
 var phase1intro = document.getElementById('Phase1');
 phase1intro.style.display='none';
+//bloody mess not loaded
+var bloodymess = document.getElementById('game_1');
+bloodymess.style.display='none';
 
 //================START PAGE ==================//
 //Info Modal Interaction
@@ -59,6 +64,7 @@ home.addEventListener('click',()=>{
     phase1intro.style.display='none';
 });
 
+//========PHASE 1 INTRO PAGE ==============//
 //go to phase 1 intro
 var phase1map = document.getElementById('level1');
 phase1map.addEventListener('click',()=>{
@@ -76,5 +82,25 @@ back.addEventListener('click',()=>{
 
 });
 
-
+//=========BLOODY MESS GAME ================//
+//click continue to go to game 1
+var game1info = document.getElementById('game_1_modal');
+var span = document.getElementsByClassName("close")[2];
+var game1 = document.getElementById('Continue');
+game1.addEventListener('click',()=>{
+    firstPage.style.display='none';
+    map1.style.display='none';
+    phase1intro.style.display='none';
+    bloodymess.style.display='block';
+    //game info appears
+    game1info.style.display="block";
 });
+//close game info after reading
+span.addEventListener('click', () => {
+    game1info.style.display = 'none';
+});
+
+//Game Logic Code - in game1.js
+//Set Variables
+});
+
