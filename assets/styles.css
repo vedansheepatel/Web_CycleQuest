@@ -423,7 +423,10 @@ animation-duration: 0.3s
 .obstacle{
   width:100px;
   height:100px;
+  transition:0.2s;
+  position:absolute;
 }
+
 .relief{
   width:100px;
   height:100px;
