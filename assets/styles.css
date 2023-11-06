@@ -426,10 +426,11 @@ animation-duration: 0.3s
   transition:0.2s;
   position:absolute;
 }
-
 .relief{
   width:100px;
   height:100px;
+  transition:0.2s;
+  position:absolute;
 }
 .game_1_player{
   width: 135px;
